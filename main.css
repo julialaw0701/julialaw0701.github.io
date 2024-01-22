@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./star.gif");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 50vh;
+    }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+    color:#f1f5f3;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(224, 34, 34, 0.5);
+    
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #f1f1f1;
+    margin:0px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(184, 117, 214, 0.74);
+  }
+  
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: rgb(139, 199, 182);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(231, 57, 57, 0.5);
+  }
+  
+
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h3 {
+    margin-top: 0;
+  }
+  
+  .section p {
+    margin-bottom: 10px;
+    animation: bounce; /* 引用動畫的 @keyframe 名稱 */
+    animation-duration: 2s;
+  }
+
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      animation: bounce; /* 引用動畫的 @keyframe 名稱 */
+      animation-duration: 2s;
+    }
+
+    html {
+      cursor: url('./icons8-hand-cursor-64.png'), default;
+    }
+
+  
+    #section0 {
+      text-align: center;
+      background-image: url(./IMG_0056.PNG);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #578497;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#section0{
+  color:rgb(77, 218, 77) 51, 51;
+  text-shadow: 2px 2px Blue;
+  font-size: larger;
+}
+
+.navbar-brand2 {
+  text-decoration: none;
+  float: right;
+}
+
+.highlight {
+  color: green;
+}
+
+#table2 {
+  border-collapse: collapse;
+  border: none;
+}
+
+#table2 td {
+  border: 1px solid rgb(125, 172, 233);
+  padding: 10px;
+}
